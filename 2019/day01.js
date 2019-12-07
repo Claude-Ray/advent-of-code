@@ -11,3 +11,8 @@ function part2(list) {
   if (arr.length === 0) return 0;
   return arr.reduce((sum, n) => sum + n, 0) + part2(arr);
 }
+
+module.exports = {
+  part1,
+  part2
+};

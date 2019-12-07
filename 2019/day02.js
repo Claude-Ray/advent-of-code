@@ -15,8 +15,8 @@ function intcode(ints) {
 
 function part1(str) {
   const ints = str.split(',').map(Number);
-  ints[1] = 12
-  ints[2] = 2
+  ints[1] = 12;
+  ints[2] = 2;
 
   return intcode(ints);
 }
@@ -32,4 +32,10 @@ function part2(str) {
       if (intcode(inputs) === 19690720) return 100 * noun + verb;
     }
   }
+  return null;
 }
+
+module.exports = {
+  part1,
+  part2
+};

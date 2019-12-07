@@ -36,7 +36,7 @@ function countMinTransfers(map) {
     const idx = sanOrbits.indexOf(youOrbits[i]);
     if (idx !== -1) return idx + i;
   }
-  return -1;
+  return null;
 }
 
 function part1(input) {
